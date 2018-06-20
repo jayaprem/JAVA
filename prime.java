@@ -1,9 +1,3 @@
-import java.util.*;
-import java.lang.*;
-class prime
-{
-public static void main(String args[])
-{
 ArrayList<Integer> x=new ArrayList<Integer>();
 Scanner sc=new Scanner(System.in);
 int b=sc.nextInt();
@@ -40,7 +34,3 @@ System.out.println(ans);
 }
 }
 }
-}
-}
-
-
