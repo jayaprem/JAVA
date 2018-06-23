@@ -44,3 +44,10 @@ public class Ideone {
 	}
 
 }
+public static int add(String input1)
+The function takes as String input input1. The function sets the output1 variable to add even numbers
+only and sets the output2 variable to add odd numbers only.
+Example:
+Input1 = {123456789}
+Ouput1 should be {2+4+6+8 = 20}
+Output2 should be {1+3+5+7+9=25}
