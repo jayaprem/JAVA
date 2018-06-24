@@ -1,9 +1,8 @@
-import java.util.*;
 import java.lang.*;
 import java.io.*;
 class Ideone
 {
-	public int a1,i,large,count=0,l,f,sum;
+	public int a1,i,large,count=0,l,f,sum,n;
 	int[] k=new int[10];
 	
 
@@ -13,7 +12,7 @@ class Ideone
 		for(i=0;i<x.length;i++)
 		{
 				large=0;
-	            
+	            n=x[i];
 		while(x[i]>0)
 		{
 		
@@ -27,7 +26,7 @@ class Ideone
 		x[i]=x[i]/10;
 		}
 		count++;
-		System.out.println(large);
+		System.out.format("the largest digit of %d%n is %d%n",n,large);
 		}
 		
 	}
@@ -43,7 +42,7 @@ class Ideone
 		}
 		
 		}
-		System.out.println(l);
+		System.out.println("the LARGEST VALUE is:"+l);
 	}
 	public void facandsum()
 	{
@@ -52,14 +51,14 @@ class Ideone
 		{
 			 f=f*k;
 		}
-			System.out.println(f);
+			System.out.println("factorial of largset value %d%n is %d%n",l,f);
 			 sum=f+l;
 	}
 	public void print()
 	{
 			
-			System.out.println(sum);
-			System.out.println(l);
+			System.out.println("sum:"+sum);
+			System.out.println("largest value:"+l);
 		
 	}
 	public static void main (String[] args) throws java.lang.Exception
