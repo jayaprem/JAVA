@@ -44,7 +44,7 @@ class Ideone
 		}
 		
 		}
-		System.out.format("the SMALLEST digit is:%d%n",s);
+		System.out.format("the SMALLEST value is:%d%n",s);
 	}
 	public void facandsum()
 	{
@@ -53,7 +53,7 @@ class Ideone
 		{
 			 f=f*k;
 		}
-			System.out.format("factorial of smallest digit %d%n is %d%n",s,f);
+			System.out.format("factorial of smallest value %d%n is %d%n",s,f);
 			 sum=f+s;
 	}
 	public void print()
