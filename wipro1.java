@@ -3,7 +3,7 @@ import java.lang.*;
 import java.io.*;
 class Ideone
 {
-	public int a1,i,small,count=0,s,f,sum;
+	public int a1,i,small,count=0,s,f,sum,n;
 	int[] k=new int[10];
 	
 
@@ -13,10 +13,11 @@ class Ideone
 		for(i=0;i<x.length;i++)
 		{
 				small=9;
+				n=x[i];
 	            
 		while(x[i]>0)
 		{
-		
+			
 		a1=x[i]%10;
 		if(a1<=small)
 		{
@@ -27,7 +28,7 @@ class Ideone
 		x[i]=x[i]/10;
 		}
 		count++;
-		System.out.println(small);
+		System.out.format("the smallest digit of %d%n is %d%n",n,small);
 		}
 		
 	}
@@ -39,11 +40,11 @@ class Ideone
 		{
 		if(k[i]<=s)	
 		{
-			s=k[i];
+				s=k[i];
 		}
 		
 		}
-		System.out.println(s);
+		System.out.format("the SMALLEST digit is:%d%n",s);
 	}
 	public void facandsum()
 	{
@@ -52,14 +53,14 @@ class Ideone
 		{
 			 f=f*k;
 		}
-			System.out.println(f);
+			System.out.format("factorial of smallest digit %d%n is %d%n",s,f);
 			 sum=f+s;
 	}
 	public void print()
 	{
 			
-			System.out.println(sum);
-			System.out.println(s);
+			System.out.println("sum:"+sum);
+			System.out.println("the smallest value :"+s);
 		
 	}
 	public static void main (String[] args) throws java.lang.Exception
@@ -72,6 +73,7 @@ class Ideone
              i.print();
 	}
 }
+
 1 . Find the Smallest digit in all the given input numbers
 For Example , if n1=123 , n2 = 227, n3 = 987
 Smallest digit in n1 = 1
