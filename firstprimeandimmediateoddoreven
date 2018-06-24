@@ -42,23 +42,32 @@ class Ideone
 				if(temp==1)
 				{
 					output1=a[i];
-				System.out.println(output1);
+				System.out.println("the first prime number is"+output1);
 				output2=a[i+1];
-				System.out.println(output2);
+				if(output2%2==0)
+				{
+				System.out.println("the immediate even number is"+output2);	
+				}
+				else
+				{
+					System.out.println("the immediate odd number is"+output2);	
+				}	
+				}
+				
 				output3=output1+output2;
 				}
 				
 					
 			}
 		}
+		return output3;
 	}
-	return output3;
-	}	
+	
 	public static void main (String[] args) throws java.lang.Exception
 	{
 	Ideone i=new Ideone();
 	int c=i.find("4 6 5 7 8 9");
-	System.out.println(c);
+	System.out.println("sum of prime and odd/even is"+c);
 	}
 }
 Given an integer number, find the first prime number, find immediate odd / even number and add
