@@ -12,7 +12,7 @@ class Ideone
 		while(a>0)
 		{
 		int c=a%10;
-		if(count%2!=0)
+		if(count%2==0)
 		{
 			x=x+(c*c*c);
 			
