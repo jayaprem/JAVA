@@ -12,7 +12,7 @@ class Ideone
 		System.out.println("UPPER CASE OF INPUT-"+s2);
 		String[] c=s2.split(" ");
 		String[] a=s1.split(" ");
-		String[] b=new String[a[t++].length()];
+		String[] b=new String[10];
 	           StringBuilder n1=new StringBuilder();
 	           n1.append(s1);
 	           System.out.println("REVERSE OF INPUT-"+n1.reverse());
@@ -57,14 +57,20 @@ class Ideone
 	}
 }
     GIVEN INPUT-wipro technologies bangaluru
+    
     UPPER CASE OF INPUT-WIPRO TECHNOLOGIES BANGALURU
+    
     REVERSE OF INPUT-urulagnab seigolonhcet orpiw
+    
     CAMELCASE - REVERSE STRING:
-    Urulagnab	Seigolonhcet	Orpiw	
+    Urulagnab	Seigolonhcet	Orpiw
+    
     CAMELCASE - GIVEN STRING:
-    Wipro	Technologies	Bangaluru	
+    Wipro	Technologies	Bangaluru
+    
     REVERSE:
-    urulagnaB	seigolonhceT	orpiW	
+    urulagnaB	seigolonhceT	orpiW
+    
     ONLY FISRT LETTER SMALL:
     wIPRO	tECHNOLOGIES	bANGALURU	
 
