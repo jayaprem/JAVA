@@ -44,8 +44,10 @@ public  void findPass(int input1,int input2,int input3,int input4)
 			Arrays.sort(q);
 			Arrays.sort(r);
 			Arrays.sort(s);
-			System.out.println("password is:");
+			System.out.println("password is:LARGEST");
 			System.out.println(s[3]+"\t"+r[3]+"\t"+q[3]+"\t"+p[3]);
+	               System.out.println("password is:SMALLEST");
+	                System.out.println(s[0]+"\t"+r[0]+"\t"+q[0]+"\t"+p[0]);
 }
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -53,3 +55,12 @@ public  void findPass(int input1,int input2,int input3,int input4)
             i.findPass(1234,4567,2445,5677);
 	}
 }
+1. Assume you have been approached by manager seeking you to generate the password for the system. Password length should be 4 digits. Use the following prototype:
+public static void findPass(int input1,int input2,int input3,int input4)
+This function takes 4 integer inputs. You are supposed to follow instructions to generate the password.
+1.	Take the 1000th digit of input1, input2, input3 and input4 – find the largest number among them and return the largest  as 1000th digit of password
+2.	Take the 100th digit of input1, input2, input3 and input4 – find the largest number among them and return the largest  as 100th digit of password
+3.	Take the 10th digit of input1, input2, input3 and input4 – find the largest number among them and return the largest  as 10th digit of password
+4.	Take the unit digit of input1, input2, input3 and input4 – find the largest number among them and return the largest  as unit digit of password
+OUTPUT:password is:
+5	6	7	7
