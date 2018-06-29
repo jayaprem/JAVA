@@ -3,27 +3,28 @@ import java.lang.*;
 import java.util.*;
 
  class Today {
-
+int q=0;
 	public void div(int dv,int dr)
 	{
 		while(dv>=dr)
 		{
-			dv=dv-dr;			
+			dv=dv-dr;
+			q++;
 		}
 	
 		if(dv==0)
 		{
-			System.out.println("divide");
+			System.out.println("divisible"+q);
 		}
 		else
 		{
-			System.out.println("not divide");
+			System.out.println("not divisible");
 		}
 	}
 
 	public static void main(String[] args) {
 		Today t=new Today();
-		t.div(10,3);
+		t.div(1998,999);
 
 	}
 
