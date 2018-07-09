@@ -8,11 +8,11 @@ class Ideone
 	
 		Scanner sc =new Scanner(System.in);
 		int a=sc.nextInt();
-		int x=0,count=0;
+		int x=0,count=1;
 		while(a>0)
 		{
 		int c=a%10;
-		if(count%2!=0)
+		if(count%2==0)
 		{
 			x=x+(c*c);
 			
