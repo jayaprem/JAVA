@@ -5,30 +5,37 @@ class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
-		Scanner sc=new Scanner(System.in);
-		String  s1= sc.nextLine();
-		String str="";
-		int sum=0,c1=0;
-		for(int i=0;i<s1.length();i++){
-			char c =s1.charAt(i);
-			if(Character.isDigit(c)){
-				str=str+c;
-				c1++;
+		String s="1ab23cd1jk";
+		String st="";
+		int s1=0;
+		int t=0;
+		for(int i=0;i<s.length();i++)
+		{
+			char c=s.charAt(i);
+			if(Character.isDigit(c))
+			{
+				st=st+c;
+				t++;
 			}
 			else if(Character.isLetter(c))
 			{
-				if(c1>0){
-					sum=sum+Integer.valueOf(str);
-				c1=0;	
-				str="0";
+				if(t>0)
+				{
+				s1=s1+Integer.parseInt(st);
+				st="";
+				t=0;
 				}
 			}
 		}
-		sum+=Integer.parseInt(str);
-		System.out.println(sum);
-		
-
+		if(t>0)
+		{
+		s1=s1+Integer.parseInt(st);
+		System.out.println(s1);
+		}
+		else
+		{
+			System.out.println(s1);
+		}
 	}
 }
 Given a string containing alphanumeric characters, calculate sum of all numbers present in the string.
