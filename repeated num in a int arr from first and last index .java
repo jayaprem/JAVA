@@ -26,8 +26,8 @@ class Ideone
 		
 		
 		ArrayList<Integer>  al=new ArrayList<Integer>(s1);
-			System.out.println(al.get(0));//first index
-			System.out.println(al.get(al.size()-1));//last index
+			System.out.println(al.get(0));//first index//1
+			System.out.println(al.get(al.size()-1));//last index//3
 		
 	}
 }
