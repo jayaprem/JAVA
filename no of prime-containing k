@@ -1,0 +1,57 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int temp=0;
+		int s=0,tj=0;
+		int sum=0;
+		int[] b=new int[16];
+		ArrayList al=new ArrayList();
+		for(int i=11;i<=27;i++)
+		{
+			int count=0;
+		for(int j=2;j<=i/2;j++)
+		{
+			if(i%j==0)
+			{
+			count=1;	
+			}
+		}
+		if(count==0)
+		{
+			temp=temp+1;
+		b[s]=i;
+		s++;
+		}
+	    }
+	    for(int k=0;k<temp;k++)
+	            {
+	            	int c=0,m;
+	            	m=b[k];
+	            	while(m>0)
+	            	{
+	            		int j=m%10;
+	            	if(j==3)
+	            	{
+	            		c=1;
+	            	}
+	            	m=m/10;
+	            	}
+	            	if(c==1)
+	            	{
+	            		tj=tj+1;
+	            		al.add(b[k]);
+	            	}
+	            }
+	            System.out.println(tj);
+	            System.out.println(al);
+	            }
+}
+output:
+input1=3
+input2=11
+input3=27
+output 2 [13,23]
