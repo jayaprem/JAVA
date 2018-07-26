@@ -1,3 +1,4 @@
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -59,3 +60,10 @@ class Ideone
 		}
 	}
 }
+Input:
+Manoj
+Kumar
+561327
+2
+output:
+mkUMAR62
