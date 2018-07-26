@@ -43,6 +43,8 @@ class Ideone
 				sname=s2;	
 			}
 		}
+		System.out.println("large":+lname);
+		System.out.println("Small"+sname);
 		String s3=String.valueOf(n);
 		al.add(lname.charAt(0)+""+sname+""+s3.charAt(N-1)+""+s3.charAt(s3.length()-N));
 		char[] c=al.get(0).toCharArray();
@@ -66,4 +68,6 @@ Kumar
 561327
 2
 output:
-mkUMAR62
+Large:Manoj
+Small:Kumar
+mkUMAR62(first letter of large name+sname+poistion(N) in pin(from left to right)+(from right to left) 
