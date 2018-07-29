@@ -13,8 +13,9 @@ class Ideone
 		String s2=sc.next();
 		int n=sc.nextInt();
 		int N=sc.nextInt();
+		int i;
 		ArrayList<String> al=new ArrayList<String>();
-		String lname,sname;
+		String lname=" ",sname="";
 		if(s1.length()>s2.length())
 		{
 			 lname=s1;
@@ -27,29 +28,28 @@ class Ideone
 		}
 		else 
 		{
-			if(s1.charAt(0)>s2.charAt(0))
+			for(i=0;i<s1.length();i++)
+			{
+			if(s1.charAt(i)>s2.charAt(i))
 			{
 				lname=s1;
 				sname=s2;
 			}
-			else if(s1.charAt(1)>s2.charAt(1))
-			{
-				lname=s2;
-				sname=s1;
-			}
 			else
 			{
-				lname=s1;
-				sname=s2;	
+				lname=s2;
+				sname=s1;	
+			}
+			break;
 			}
 		}
-		System.out.println("large":+lname);
-		System.out.println("Small"+sname);
+		System.out.println("large:"+lname);
+		System.out.println("Small:"+sname);
 		String s3=String.valueOf(n);
 		al.add(lname.charAt(0)+""+sname+""+s3.charAt(N-1)+""+s3.charAt(s3.length()-N));
 		char[] c=al.get(0).toCharArray();
 		
-		for(int i=0;i<c.length;i++)
+		for(i=0;i<c.length;i++)
 		{
 			if(Character.isLowerCase(c[i]))
 			{
