@@ -41,21 +41,22 @@ System.out.println("ENCRYPTION:");
 		String s2=sj.toUpperCase();
 		String[] s3=s2.split(" ");
 		int k2=sc1.nextInt();
+	int c1j;
 		System.out.println("\nPLAIN TEXT:");
 		for(int i=0;i<s3.length;i++)
 		{
 		char[] c2=s3[i].toCharArray();
 			for(int j=0;j<c2.length;j++)
 			{
-				int c3=(int)c2[j]-k;
+				int c3=(int)c2[j]-k2;
 				if(c3>=65)
 				{
 				System.out.print((char)c3);
 				}
 				if(c3<65)
 				{
-				cj=c3+26;
-				System.out.println((char)cj);
+				c1j=c3+26;
+				System.out.println((char)c1j);
 				}
 			}
 			System.out.print(" ");
