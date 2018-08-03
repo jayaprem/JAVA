@@ -18,9 +18,8 @@ class Ideone
 			int c=0;
 			for(j=i;j<s.length();j++)
 			{
-				d=d+s.charAt(j);
+				/*d=d+s.charAt(j);
 				c++;
-				
 				if(c>1)
 				{
 					if(!s.equals(d))
@@ -28,7 +27,14 @@ class Ideone
 					al.add(d);
 					t++;
 			                        }
-				}
+				}*/
+				(OR)
+					/*d=s.substring(i,j);
+				if(!s.equals(d))
+				{	al.add(d);
+					t++;
+				}*/
+
 				
 			}
 		}
