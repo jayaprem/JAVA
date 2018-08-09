@@ -20,14 +20,20 @@ class N
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		int[] a={9,8,8,0,1,2,7,4,3,1};
-		int i=0,sum=0;
+		//int[] a={9,8,8,0,1,2,7,4,3,1};
+		String k="9880127431";
+		int i=0,sum=0,j;
 		String s=" ";
+		int[] a=new int[k.length()];
+		for(j=0;j<k.length();j++)
+		{
+		a[j]=Integer.parseInt(Character.toString(k.charAt(j)));
+		}
 		while(i<a.length)
 		{
+			
 			if(a[i]%2!=0)
 			{
-			
 				do
 				{
 				sum=sum+a[i];
@@ -46,14 +52,12 @@ class N
 				s=s+sum;
 				sum=0;
 			}
-			        if(i==a.length-1)
+			  if(i==a.length-1)
 				{
 				s=s+a[i];
-	      break;
+	                                   break;
 				}
-			
-		}
-			
+			}
 		System.out.println(s);
 	}
 }
