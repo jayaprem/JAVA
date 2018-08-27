@@ -16,14 +16,15 @@ class A1
 public static void main(String ar[])
 {
 Scanner sc=new Scanner(System.in);
-String s1=sc.nextLine();
+String s1=sc.nextLine().toUpperCase();
+//System.out.println(s1);
 int n1=sc.nextInt();
 if(n1>99&&n1<1000)
 {
 int x=n1%26;
 int d='A'+x;
 char c=(char)d;
-System.out.println(c);
+System.out.println("the char generated is:"+c);
 char[] c1=s1.toCharArray();
 ArrayList<Character> al=new ArrayList<Character>();
 for(char b:c1)
@@ -44,3 +45,6 @@ System.out.println("enter a valid input");
 }
 }
 }
+OUTPUT:
+the char generated is:A
+UNSTABLE
