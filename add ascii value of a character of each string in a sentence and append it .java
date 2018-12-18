@@ -50,6 +50,9 @@ class Ideone
 }
 output:
 world wide web
+keep the center letter as it is
+first-last
+second-third
 (w-d+o-l+r)+(w-e+i-d)+(w-b+e)
 104+23+90
 1042390
