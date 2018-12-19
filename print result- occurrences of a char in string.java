@@ -1,7 +1,7 @@
   QUESTION:
  Input1="jaya"
 Input2=100-999
-convert the input into mod26 format.
+convert the input2 into mod26 format.
 find the character based on the result.
 check whether the character appear in a string or not
 If the char in a string,find the number of occurrences of char
