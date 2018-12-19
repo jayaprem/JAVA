@@ -51,7 +51,7 @@ class Ideone
 	            }
 }
 output:
-input1=3
-input2=11
-input3=27
+input1=3(number of prime containing 3)
+input2=11(starting value)
+input3=27(ending value)
 output 2 [13,23]
