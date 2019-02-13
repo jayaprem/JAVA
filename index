@@ -1,7 +1,9 @@
 <html>
 <head>
-<title>Hi</title>
 <style>
+h1{
+color:#FFFF00;
+}
 h2
 {
 color:#C71585;
@@ -16,14 +18,12 @@ height:800px;
 {
     height:inherit;
    font-style:Times new roman;
-   color:#FFFF00; 
    
 }
 #first
 {
 height:inherit;
 background:white;
-
 }
 #team1
 {
@@ -37,25 +37,25 @@ font-style:Times new roman;
 color:black;
 float:right;
 }
-#win
+.win
 {
 color:black;
-width:50%;
-
 }
 hr
 {
 border:1px solid #FFFF00
 }
-team1details
+.team1details
 {
 float:left;
 color:black;
+width:50%;
 }
 .team2details
 {
 float:right;
 color:black;
+width:50%;
 }
 </style>
 </head>
@@ -64,9 +64,8 @@ color:black;
 <div id="main">
           <h1><p><center>Indian Premier League</center></p></h1>
        <div id="first">
-          <center><h2><p>Team Details</p></center>
-            <p><center>Mumbai Indians vs Rising Pune Supergiants</center></p>
-           </h2>
+          <center><h2>Team Details</h2></center>
+            <center><h2>Mumbai Indians vs Rising Pune Supergiants</h2></center>
          <div id="team1" style="width:50%">
           <h2>Team1 :Mumbai Indians</h2>
           <ul class='a'>
@@ -91,26 +90,27 @@ color:black;
         </div>
 <hr/>
        <div id="win">
-       <center> <h2>Winning Details</h2></center>
-    <p><b>Rising Pune Supergiants</b>won the match by <b>7 wickets</b></p>
+       <center><h2>Winning Details</h2></center>
+    <p><b>Rising Pune Supergiants </b>won the match by <b>7 wickets</b></p>
        </div>
 <hr/>
 <div class="score">
-                                                <h4><i><center>Score Details</center></i></h4>
-                                                <div class ="team1details">
-                                                                <h4><i>Mumbai Indians</i></h4>
-                                                                <p><b>Runs-</b>121</p>
-                                                                <p><b>Overs-</b>20</p>
-                                                                <p><b>Wickets-</b>8</p>
-                                                </div>
-                                                <div class ="team2details">
-                                                                <h4><i>Rising Pune Supergaints</i></h4>
-                                                                <p><b>Runs-</b>126</p>
-                                                                <p><b>Overs-</b>14.4</p>
-                                                                <p><b>Wickets-</b>1</p>
-                                                </div>
+     <h2><i><center>Score Details</center></i></h2>
+             <div class ="team1details">
+                  <h3><i>Mumbai Indians</i></h3>
+                   <p><b>Runs-</b>121</p>
+                   <p><b>Overs-</b>20</p>
+                   <p><b>Wickets-</b>8</p>
+              </div>
+             <div class ="team2details">
+                  <h3><i>Rising Pune Supergaints</i></h3>
+                  <p><b>Runs-</b>126</p>
+                  <p><b>Overs-</b>14.4</p>
+                  <p><b>Wickets-</b>1</p>
+              </div>
 
       </div>
+	  </div>
 </div>
 </body>
 </html>
