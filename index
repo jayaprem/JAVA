@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Hi</title>
+<style>
+h2
+{
+color:#C71585;
+font-style:italic;
+}
+body
+{
+background:#C71585;
+height:800px;
+}
+#main
+{
+    height:inherit;
+   font-style:Times new roman;
+   color:#FFFF00; 
+   
+}
+#first
+{
+height:inherit;
+background:white;
+
+}
+#team1
+{
+font-style:Times new roman;
+float:left;
+color:black;
+}
+#team2
+{
+font-style:Times new roman;
+color:black;
+float:right;
+}
+#win
+{
+color:black;
+width:50%;
+
+}
+hr
+{
+border:1px solid #FFFF00
+}
+team1details
+{
+float:left;
+color:black;
+}
+.team2details
+{
+float:right;
+color:black;
+}
+</style>
+</head>
+<body>
+
+<div id="main">
+          <h1><p><center>Indian Premier League</center></p></h1>
+       <div id="first">
+          <center><h2><p>Team Details</p></center>
+            <p><center>Mumbai Indians vs Rising Pune Supergiants</center></p>
+           </h2>
+         <div id="team1" style="width:50%">
+          <h2>Team1 :Mumbai Indians</h2>
+          <ul class='a'>
+         <li>xxxx</li>
+          <li>yyyyy</li>
+          <li>dfdfdf</li>
+          <li>dfdfdf</li>
+          <li>dfdfdf</li>
+          <li>dfdfdf</li>
+          </ul>
+        </div>
+        <div id="team2" style="width:50%">
+         <h2 >Team2 :Rising Pune Supergiants</h2>
+         <ul class='b'>
+		<li>xxxx</li>
+         <li>yyyyy</li>
+         <li>dfdfdf</li>
+         <li>dfdfdf</li>
+         <li>dfdfdf</li>
+         <li>dfdfdf</li>
+         </ul>
+        </div>
+<hr/>
+       <div id="win">
+       <center> <h2>Winning Details</h2></center>
+    <p><b>Rising Pune Supergiants</b>won the match by <b>7 wickets</b></p>
+       </div>
+<hr/>
+<div class="score">
+                                                <h4><i><center>Score Details</center></i></h4>
+                                                <div class ="team1details">
+                                                                <h4><i>Mumbai Indians</i></h4>
+                                                                <p><b>Runs-</b>121</p>
+                                                                <p><b>Overs-</b>20</p>
+                                                                <p><b>Wickets-</b>8</p>
+                                                </div>
+                                                <div class ="team2details">
+                                                                <h4><i>Rising Pune Supergaints</i></h4>
+                                                                <p><b>Runs-</b>126</p>
+                                                                <p><b>Overs-</b>14.4</p>
+                                                                <p><b>Wickets-</b>1</p>
+                                                </div>
+
+      </div>
+</div>
+</body>
+</html>
