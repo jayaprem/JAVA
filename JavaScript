@@ -1,0 +1,53 @@
+onclick
+onfocus
+onblur
+onkeyup
+<html>
+<head>
+<script>
+                function add1()
+                {
+                                //document object model
+                                var x=document.getElementById("no1").value;
+                                var y=document.getElementById("no2").value;
+                                var i=parseInt(x);
+                                var j=parseInt(y);
+                                document.getElementById("divResult").innerHTML=(i+j);
+                }
+                function doColor(btn)
+                {
+                                btn.style.backgroundColor="yellow";
+                }
+                function noColor(btn)
+                {
+                                btn.style.backgroundColor="white";
+                }
+                function chkPassword()
+                {
+                                var pwd=document.getElementById("no1").value;
+                                if(pwd.length<3)
+                                {
+                                                document.getElementById("divResult").innerHTML="weak";
+                                                document.getElementById("divResult").style.backgroundColor="red";
+                                }else if(pwd.length<6)
+                                {
+                                                document.getElementById("divResult").innerHTML="moderate";
+                                                document.getElementById("divResult").style.backgroundColor="orange";
+                                }else
+                                {
+                                                document.getElementById("divResult").innerHTML="strong";
+                                                document.getElementById("divResult").style.backgroundColor="green";
+                                }
+
+                }
+</script>
+</head>
+<body>
+Number 1:<input id=no1 onfocus=doColor(this) onblur=noColor(this) type=text onkeyup="chkPassword()" /><br/>
+Number 2:<input id=no2 onfocus=doColor(this) onblur=noColor(this) type=text /><br/>
+<div id=divResult> 0 </div>
+<input type=button onfocus=doColor(this) onblur=noColor(this) value=Add onclick=add1() />
+<input type=button onfocus=doColor(this) onblur=noColor(this) value=Subtract />
+<input type=button onfocus=doColor(this) onblur=noColor(this) value=Multiply />
+</body>
+</html>
