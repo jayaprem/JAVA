@@ -33,11 +33,10 @@ class Ideone
 			            }
 				}
 		}
-	  for(i=2;i<=100;i++)
-		{
+		i=2;
+	  while(t<=N)
+		{   
 			count=0;
-			if(t<=N)
-			{
 			 for(int j=1;j<=i;j++)
 			{
 				if(i%j==0)
@@ -46,15 +45,16 @@ class Ideone
 				}
 			}
 			 if(count==2)
-	     {
+	                {
 				d[t]=i;
 				t=t+2;
-		   }
-			}
+		        }
+		        i=i+1;
 		}
-		System.out.println("Ans:"+d[N]);
+	System.out.println("Ans:"+d[N]);
 	}
 }
+
 OUTPUT:
 Enter a N value:
 14
