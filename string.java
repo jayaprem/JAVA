@@ -10,36 +10,20 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		String s="account",g="";
-		int i,j,t=0,s1=0;
+		int i,j,s1=0;
 		ArrayList<String> al=new ArrayList<String>();
-		for(i=0;i<s.length();i++)
+		for(i=0;i<s.length()-1;i++)
 		{
-			String d="";
-			int c=0;
-			for(j=i;j<s.length();j++)
+			for(j=i+1;j<s.length();j++)
 			{
-				/*d=d+s.charAt(j);
-				c++;
-				if(c>1)
-				{
-					if(!s.equals(d))
-			                        {
-					al.add(d);
-					t++;
-			                        }
-				}*/
-				(OR)
-					/*d=s.substring(i,j);
-				if(!s.equals(d))
-				{	al.add(d);
-					t++;
-				}*/
-
-				
+				d=d+s.substring(i,j+1);
+			    if(!s.equals(d)) al.add(d);
+			    d="";
 			}
+			
 		}
 		System.out.println(al);
-	System.out.println(t);
+	System.out.println(al.size());
 	for(i=0;i<al.size();i++)
 	{
 		if(al.get(i).contains("c")){
