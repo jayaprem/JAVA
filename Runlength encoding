@@ -1,0 +1,36 @@
+https://practice.geeksforgeeks.org/problems/run-length-encoding/1
+
+PGM:
+class GfG
+ {
+	String encode(String s)
+	{ 
+	    int i,t=1;
+		int c=s.charAt(0);
+String r="";
+String j="";
+		for(i=1;i<s.length();i++)
+		{
+			if(c==(int)s.charAt(i))	
+			{
+				t++;
+			}
+			if(c!=(int)s.charAt(i))
+			{
+				r+=(char)c+""+t;
+				c=(int)s.charAt(i);
+				t=1;
+			}
+			
+			}
+		r+=(char)c+""+t;
+
+		return r;
+		
+	}
+	}
+	INPUT:
+  aacccdcafftttt
+  Output:
+  a2c3d1c1a1f2t4
+ 
