@@ -19,3 +19,18 @@ class Ideone
               System.out.println(a);
    }
 }
+
+OR
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String s="aesdsnjdgoitieoutewpod";
+		String b=s.replaceAll("[aeiouAEIOU]","");
+		System.out.println(b);
+	}
+}
